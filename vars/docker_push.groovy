@@ -3,7 +3,7 @@ def call(Map config = [:]) {
     def imageTag = config.imageTag ?: 'latest'
     def credentials = config.credentials ?: 'docker-hub-credentials'
     
-    echo "Pushing Docker image: ${imageName}:${imageTag}"w
+    echo "Pushing Docker image: ${imageName}:${imageTag}"
     
     withCredentials([usernamePassword(
         credentialsId: credentials,
