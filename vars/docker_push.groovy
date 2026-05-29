@@ -1,5 +1,5 @@
 def call(Map config = [:]) {
-    def imageName = config.imageName ?: error("Image name is required")
+    def imageName = config.imageName ?: error("Image name is required")w
     def imageTag = config.imageTag ?: 'latest'
     def credentials = config.credentials ?: 'docker-hub-credentials'
     
